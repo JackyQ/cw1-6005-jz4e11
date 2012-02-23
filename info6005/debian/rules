@@ -9,5 +9,58 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-%:
-	dh $@ 
+conf = $(CURDIR)/etc/cw1/feeds.conf
+getnews = $(CURDIR)/usr/bin/get_news
+index = $(CURDIR)/usr/share/cw1/index.php
+rss = $(CURDIR)/usr/share/cw1/rss_php.php
+
+phpdest = $(CURDIR)/debian/info6005-cw1-jz4e11/usr/share/cw1
+getnewsdest = $(CURDIR)/debian/info6005-cw1-jz4e11/usr/bin
+confdest = $(CURDIR)/debian/info6005-cw1-jz4e11/etc/cw1
+
+build: build-stamp
+
+build-stamp: 
+	dh_testdir
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	dh_clean
+	rm -f build
+
+install: build clean $(conf) $(index) $(rss) $(getnews)
+	dh_testdir
+	dh_testroot
+	dh_installdirs
+	
+	mkdir -p $(confdest)
+	mkdir -p $(phpdest)
+	mkdir -p $(getnewsdest)
+
+	install $(index) $(phpdest)
+	install $(rss) $(phpdest)
+	install $(getnews) $(getnewsdest)
+	install $(conf) $(confdest)
+
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs
+	dh_installdocs
+	dh_installexamples
+	dh_installdebconf
+	dh_installman
+	dh_link
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary-indep: build install
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install
