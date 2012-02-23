@@ -1,3 +1,10 @@
+cw1-6005-jz4e11 (1.0) stable; urgency=low
+
+  * Initial release
+  * Update to stable version
+
+ -- Jiaqi Zhou <jz4e11@soton.ac.uk>  Thu, 23 Feb 2012 15:44:35 +0000
+ 
 cw1-6005-jz4e11 (0.9) unstable; urgency=low
 
   * Ready to package.

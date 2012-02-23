@@ -11,4 +11,5 @@ Vcs-Git: git://github.com/JackyQ/cw1-6005-jz4e11.git
 Package: cw1-6005-jz4e11
 Architecture: any
 Depends: ${misc:Depends}
-Description: A command line for RSS reader.
+Description: a command line for RSS reader
+ jz4e11's coursework1 for info6005.

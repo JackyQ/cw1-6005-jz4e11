@@ -35,14 +35,14 @@ install: build clean $(conf) $(index) $(rss) $(getnews)
 	dh_testroot
 	dh_installdirs
 	
-	mkdir -p $(confdest)
-	mkdir -p $(phpdest)
-	mkdir -p $(getnewsdest)
+	mkdir -m 755 -p $(confdest)
+	mkdir -m 755 -p $(phpdest)
+	mkdir -m 755 -p $(getnewsdest)
 
-	install $(index) $(phpdest)
-	install $(rss) $(phpdest)
-	install $(getnews) $(getnewsdest)
-	install $(conf) $(confdest)
+	install -m 644 $(index) $(phpdest)
+	install -m 644 $(rss) $(phpdest)
+	install -m 644 $(getnews) $(getnewsdest)
+	install -m 644 $(conf) $(confdest)
 
 binary-arch: build install
 	dh_testdir
