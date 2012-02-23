@@ -1,3 +1,9 @@
+cw1-6005-jz4e11 (0.9) unstable; urgency=low
+
+  * Ready to package.
+
+ -- Jiaqi Zhou <jz4e11@soton.ac.uk>  Thu, 23 Feb 2012 12:54:35 +0000
+
 package (0.1) unstable; urgency=low
 
   * Initial create.

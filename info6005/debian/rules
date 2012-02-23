@@ -14,9 +14,9 @@ getnews = $(CURDIR)/usr/bin/get_news
 index = $(CURDIR)/usr/share/cw1/index.php
 rss = $(CURDIR)/usr/share/cw1/rss_php.php
 
-phpdest = $(CURDIR)/debian/info6005-cw1-jz4e11/usr/share/cw1
-getnewsdest = $(CURDIR)/debian/info6005-cw1-jz4e11/usr/bin
-confdest = $(CURDIR)/debian/info6005-cw1-jz4e11/etc/cw1
+phpdest = $(CURDIR)/debian/cw1-6005-jz4e11/usr/share/cw1
+getnewsdest = $(CURDIR)/debian/cw1-6005-jz4e11/usr/bin
+confdest = $(CURDIR)/debian/cw1-6005-jz4e11/etc/cw1
 
 build: build-stamp
 
