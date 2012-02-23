@@ -1,15 +1,14 @@
-Source: package
-Section: unknown
-Priority: extra
+Source: cw1-6005-jz4e11
+Section: php
+Priority: optional
 Maintainer: Jiaqi Zhou <jz4e11@soton.ac.uk>
-Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends: debhelper (>= 7.0.50~), php5-cli, debconf
 Standards-Version: 3.8.4
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/package.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/package.git;a=summary
+Homepage: http://github.com/JackyQ/cw1-6005-jz4e11
+Vcs-Git: git://github.com/JackyQ/cw1-6005-jz4e11.git
 
-Package: package
-Architecture: all
+
+Package: cw1-6005-jz4e11
+Architecture: any
 Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: A command line for RSS reader.
