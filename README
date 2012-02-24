@@ -1,0 +1,39 @@
+
+=================================
+ABOUT CW1-6005-JZ4E11
+
+This project is a debian package for a PHP RSS reader, which is also the Coursework 1 for Info6005 - Rich Internet Application.
+
+Author: Jiaqi Zhou(jz4e11@soton.ac.uk)
+Note:clone of https://github.com/JackyQ/cw1-6005-jz4e11
+
+=================================
+GET CW1-6005-JZ4E11
+
+Please clone it from https://github.com/JackyQ/cw1-6005-jz4e11.
+
+Run below command in terminal:
+	'git clone git@github.com:JackyQ/cw1-6005-jz4e11.git'
+
+=================================
+INSTALL and UNINSTALL CW1-6005-JZ4E11
+
+In terminal, run:
+	'dpkg -i cw1-6005-jz4e11_1.1.1_i386.deb'
+to install cw1-6005-jz4e11
+
+If it display "dpkg: requested operation requires superuser privilege", it means permission denied, please run:
+	'sudo dpkg -i cw1-6005-jz4e11_1.1.1_i386.deb'
+
+If want to unistall please run
+	'dpkg -r cw1-6005-jz4e11'
+or
+	'sudo dpkg -r cw1-6005-jz4e11'
+
+=================================
+USE CW1-6005-JZ4E11
+
+Run:
+	'get_news'
+then, it can print the headlines of BBC news
+
