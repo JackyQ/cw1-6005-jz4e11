@@ -9,14 +9,14 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-conf = $(CURDIR)/etc/cw1/feeds.conf
+conf = $(CURDIR)/etc/cw1-6005-jz4e11/feeds.conf
 getnews = $(CURDIR)/usr/bin/get_news
-index = $(CURDIR)/usr/share/cw1/index.php
-rss = $(CURDIR)/usr/share/cw1/rss_php.php
+index = $(CURDIR)/usr/share/cw1-6005-jz4e11/index.php
+rss = $(CURDIR)/usr/share/cw1-6005-jz4e11/rss_php.php
 
-phpdest = $(CURDIR)/debian/cw1-6005-jz4e11/usr/share/cw1
+phpdest = $(CURDIR)/debian/cw1-6005-jz4e11/usr/share/cw1-6005-jz4e11
 getnewsdest = $(CURDIR)/debian/cw1-6005-jz4e11/usr/bin
-confdest = $(CURDIR)/debian/cw1-6005-jz4e11/etc/cw1
+confdest = $(CURDIR)/debian/cw1-6005-jz4e11/etc/cw1-6005-jz4e11
 
 build: build-stamp
 
