@@ -1,9 +1,17 @@
+cw1-6005-jz4e11 (1.1) stable; urgency=low
+
+  * modify get_news file in bin folder, use it as a shell command file	
+  * add shell command "get_news" instead of "php /usr/share/cw1/index.php"
+
+ -- Jiaqi Zhou <jz4e11@soton.ac.uk>  Fri, 24 Feb 2012 05:34:47 +0000
+
+
 cw1-6005-jz4e11 (1.0) stable; urgency=low
 
   * Initial release
   * Update to stable version
 
- -- Jiaqi Zhou <jz4e11@soton.ac.uk>  Thu, 23 Feb 2012 15:44:35 +0000
+ -- Jiaqi Zhou <jz4e11@soton.ac.uk>  Thu, 23 Feb 2012 15:44:32 +0000
  
 cw1-6005-jz4e11 (0.9) unstable; urgency=low
 
@@ -15,4 +23,4 @@ package (0.1) unstable; urgency=low
 
   * Initial create.
 
- -- Jiaqi Zhou <jz4e11@soton.ac.uk>  Thu, 23 Feb 2012 05:13:35 +0000
+ -- Jiaqi Zhou <jz4e11@soton.ac.uk>  Thu, 23 Feb 2012 05:13:32 +0000
